@@ -1,6 +1,6 @@
 //Maya ASCII 2013 scene
 //Name: AieTruth_DONOTREFRENCE_repathMT.ma
-//Last modified: Fri, Jun 28, 2013 02:18:31 PM
+//Last modified: Fri, Jun 28, 2013 03:48:04 PM
 //Codeset: 1252
 file -rdi 1 -ns "AIE_EnvironmentE" -rfn "AIE_EnvironmentERN" "C:/Users/student/Documents/GitHub/AIE_Logo_New/Sara Dolan AIE Progress folder/AIE_EnvironmentE.ma";
 file -rdi 1 -ns "AIE_Assemble2" -rfn "AIE_Assemble2RN" "C:/Users/student/Documents/GitHub/AIE_Logo_New/Sara Dolan AIE Progress folder/AIE Assemble2.ma";
@@ -87,7 +87,7 @@ createNode lookAt -n "TruthMainCamra";
 	setAttr ".rp" -type "double3" 0 0.21003135714285712 -1.5569915000000001 ;
 	setAttr ".sp" -type "double3" 0 0.21003135714285712 -1.5569915000000001 ;
 	setAttr ".a" -type "double3" 0 0 -1 ;
-	setAttr ".db" 1810.4564444135331;
+	setAttr ".db" 39.183034705512455;
 createNode transform -n "truthCam" -p "TruthMainCamra";
 createNode camera -n "truthCamShape" -p "truthCam";
 	setAttr -k off ".v";
@@ -95,7 +95,7 @@ createNode camera -n "truthCamShape" -p "truthCam";
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
-	setAttr ".coi" 1810.4564444135331;
+	setAttr ".coi" 39.183034705512455;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
@@ -7000,20 +7000,20 @@ createNode reference -n "AIE_Assemble2RN";
 		5 4 "AIE_Assemble2RN" "|AIE_Assemble2:maincamera.offsetZ" "AIE_Assemble2RN.placeHolderList[24]" 
 		""
 		"AIE_Assemble2RN" 32
-		2 "|AIE_Assemble2:AIE_logo" "translate" " -type \"double3\" -61.239899 31.155692 204.132997"
+		2 "|AIE_Assemble2:AIE_logo" "translate" " -type \"double3\" 0 -496.291773 0"
 		
 		2 "|AIE_Assemble2:AIE_logo" "translateY" " -av"
-		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "translate" " -type \"double3\" -11.559225 25.825103 -65.55562"
+		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "translate" " -type \"double3\" -9.819436 -98.390334 -55.688787"
 		
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "translateX" " -av"
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "translateY" " -av"
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "translateZ" " -av"
-		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "rotate" " -type \"double3\" 0.0435365 8.354761 0.136155"
+		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "rotate" " -type \"double3\" 0 0 0"
 		
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "rotateX" " -av"
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "rotateY" " -av"
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "rotateZ" " -av"
-		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "scale" " -type \"double3\" 2.201171 1.92932 1.606771"
+		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "scale" " -type \"double3\" 2.201171 3.082501 2.201171"
 		
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "scaleX" " -av"
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "scaleY" " -av"
@@ -7022,7 +7022,7 @@ createNode reference -n "AIE_Assemble2RN";
 		
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:A" "scalePivotTranslate" " -type \"double3\" 0 0 0"
 		
-		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:I" "translate" " -type \"double3\" -10.70081 26.672873 -39.265596"
+		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:I" "translate" " -type \"double3\" -10.70081 -12.830499 -39.265596"
 		
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:I" "translateX" " -av"
 		2 "|AIE_Assemble2:AIE_logo|AIE_Assemble2:I" "translateY" " -av"
@@ -7190,7 +7190,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference" 
 		"translate" " -type \"double3\" 0 -344.748495 -2503.672056"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightWristEffector" 
-		"translate" " -type \"double3\" -12.281975 95.556602 39.544645"
+		"translate" " -type \"double3\" -22.458469 1233.914795 26.530905"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightWristEffector" 
 		"translateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightWristEffector" 
@@ -7198,7 +7198,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightWristEffector" 
 		"translateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightWristEffector" 
-		"rotate" " -type \"double3\" 68.821085 23.526196 88.226723"
+		"rotate" " -type \"double3\" -155.265 5.127971 -99.792862"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightWristEffector" 
 		"rotateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightWristEffector" 
@@ -7206,7 +7206,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightWristEffector" 
 		"rotateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightElbowEffector" 
-		"translate" " -type \"double3\" -11.52997 120.011887 28.862787"
+		"translate" " -type \"double3\" -26.988489 1207.713501 24.143959"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightElbowEffector" 
 		"translateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightElbowEffector" 
@@ -7214,7 +7214,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightElbowEffector" 
 		"translateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightElbowEffector" 
-		"rotate" " -type \"double3\" 17.990785 23.585527 88.238808"
+		"rotate" " -type \"double3\" -160.550911 5.129789 -99.81036"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightElbowEffector" 
 		"rotateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightElbowEffector" 
@@ -7222,7 +7222,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightElbowEffector" 
 		"rotateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulderEffector" 
-		"translate" " -type \"double3\" -10.922862 146.19751 21.146587"
+		"translate" " -type \"double3\" -17.707268 1198.965698 0"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulderEffector" 
 		"translateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulderEffector" 
@@ -7230,7 +7230,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulderEffector" 
 		"translateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulderEffector" 
-		"rotate" " -type \"double3\" 18.259939 16.413238 88.673341"
+		"rotate" " -type \"double3\" -132.650606 62.154172 -43.304971"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulderEffector" 
 		"rotateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulderEffector" 
@@ -7238,7 +7238,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulderEffector" 
 		"rotateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder" 
-		"rotate" " -type \"double3\" 83.35926 49.263114 1.772332"
+		"rotate" " -type \"double3\" 0 0 0.0447452"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder" 
 		"rotateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder" 
@@ -7246,7 +7246,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder" 
 		"rotateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm" 
-		"rotate" " -type \"double3\" -299.624247 107.926265 -156.814948"
+		"rotate" " -type \"double3\" -132.650606 62.154172 -43.349717"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm" 
 		"rotateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm" 
@@ -7254,7 +7254,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm" 
 		"rotateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightForeArm" 
-		"rotate" " -type \"double3\" 179.725642 173.315867 177.361411"
+		"rotate" " -type \"double3\" 32.64535 65.767469 35.101379"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightForeArm" 
 		"rotateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightForeArm" 
@@ -7262,7 +7262,7 @@ createNode reference -n "shaqs_rig_character___CopyRN";
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightForeArm" 
 		"rotateX" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightForeArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightHand" 
-		"rotate" " -type \"double3\" 50.835127 -0.059853 0.0077848"
+		"rotate" " -type \"double3\" 5.284348 -0.00408941 -0.0170389"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightForeArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightHand" 
 		"rotateZ" " -av"
 		2 "|shaqs_rig_character___Copy:shaq_character_stuff|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Reference|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Hips|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine1|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_Spine2|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightShoulder|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightForeArm|shaqs_rig_character___Copy:Sci_fi_character_animation:Character1_Ctrl_RightHand" 
@@ -7421,11 +7421,11 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Reference|DavidAIEChacatersean:Character1_Hips|DavidAIEChacatersean:Character1_Spine|DavidAIEChacatersean:Character1_Spine1|DavidAIEChacatersean:Character1_Spine2|DavidAIEChacatersean:Character1_Neck|DavidAIEChacatersean:Character1_Head" 
 		"drawStyle" " 2"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference" 
-		"translate" " -type \"double3\" 137.874039 -335.57857 -2788.734182"
+		"translate" " -type \"double3\" 137.874039 -342.576331 -2788.734182"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference" 
 		"translateY" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HipsEffector" 
-		"translate" " -type \"double3\" 2.006496 90.34137 142.833252"
+		"translate" " -type \"double3\" 0 93.583221 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HipsEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HipsEffector" 
@@ -7433,7 +7433,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HipsEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HipsEffector" 
-		"rotate" " -type \"double3\" 2.264494 -17.326502 -1.443219"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HipsEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HipsEffector" 
@@ -7441,7 +7441,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HipsEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftAnkleEffector" 
-		"translate" " -type \"double3\" 30.117712 8.081791 142.474518"
+		"translate" " -type \"double3\" 8.909985 8.149555 7.15256e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftAnkleEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftAnkleEffector" 
@@ -7449,7 +7449,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftAnkleEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftAnkleEffector" 
-		"rotate" " -type \"double3\" -0.177185 8.317032 5.340281"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftAnkleEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftAnkleEffector" 
@@ -7457,7 +7457,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftAnkleEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightAnkleEffector" 
-		"translate" " -type \"double3\" -24.732122 8.029388 141.603912"
+		"translate" " -type \"double3\" -8.909986 8.149555 0.000439405"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightAnkleEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightAnkleEffector" 
@@ -7465,7 +7465,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightAnkleEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightAnkleEffector" 
-		"rotate" " -type \"double3\" 0.158203 -6.104396 -2.963494"
+		"rotate" " -type \"double3\" 1.06722e-005 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightAnkleEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightAnkleEffector" 
@@ -7473,7 +7473,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightAnkleEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftWristEffector" 
-		"translate" " -type \"double3\" 15.338898 89.742653 154.753006"
+		"translate" " -type \"double3\" 17.700224 93.452042 -0.00368547"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftWristEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftWristEffector" 
@@ -7481,7 +7481,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftWristEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftWristEffector" 
-		"rotate" " -type \"double3\" 44.999994 -10.361945 -96.628879"
+		"rotate" " -type \"double3\" 15.000004 -11.233521 -90.000342"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftWristEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftWristEffector" 
@@ -7489,7 +7489,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftWristEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightWristEffector" 
-		"translate" " -type \"double3\" -11.4363 92.331963 130.480042"
+		"translate" " -type \"double3\" -17.70038 93.452393 -0.0062685"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightWristEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightWristEffector" 
@@ -7497,7 +7497,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightWristEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightWristEffector" 
-		"rotate" " -type \"double3\" -44.999914 9.031764 75.998983"
+		"rotate" " -type \"double3\" 15.000005 11.230962 89.998322"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightWristEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightWristEffector" 
@@ -7505,7 +7505,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightWristEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftKneeEffector" 
-		"translate" " -type \"double3\" 18.587181 46.272091 150.543869"
+		"translate" " -type \"double3\" 8.909986 48.77396 2.494691"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftKneeEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftKneeEffector" 
@@ -7513,7 +7513,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftKneeEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftKneeEffector" 
-		"rotate" " -type \"double3\" 11.460441 -3.797032 16.031042"
+		"rotate" " -type \"double3\" 3.513732 -3.25555e-005 1.44784e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftKneeEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftKneeEffector" 
@@ -7521,7 +7521,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftKneeEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightKneeEffector" 
-		"translate" " -type \"double3\" -18.065887 47.778244 147.274445"
+		"translate" " -type \"double3\" -8.909991 48.773998 2.494436"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightKneeEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightKneeEffector" 
@@ -7529,7 +7529,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightKneeEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightKneeEffector" 
-		"rotate" " -type \"double3\" 8.140748 -10.317084 -10.988084"
+		"rotate" " -type \"double3\" 3.512767 -1.44247e-005 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightKneeEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightKneeEffector" 
@@ -7537,7 +7537,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightKneeEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftElbowEffector" 
-		"translate" " -type \"double3\" 18.628595 115.840591 150.190933"
+		"translate" " -type \"double3\" 17.700333 119.637367 -5.206146"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftElbowEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftElbowEffector" 
@@ -7545,7 +7545,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftElbowEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftElbowEffector" 
-		"rotate" " -type \"double3\" 31.731045 -9.839285 -97.184481"
+		"rotate" " -type \"double3\" -0.00815695 -11.237401 -90.000285"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftElbowEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftElbowEffector" 
@@ -7553,7 +7553,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftElbowEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightElbowEffector" 
-		"translate" " -type \"double3\" -7.586143 118.26178 125.42543"
+		"translate" " -type \"double3\" -17.699604 119.637794 -5.207548"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightElbowEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightElbowEffector" 
@@ -7561,7 +7561,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightElbowEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightElbowEffector" 
-		"rotate" " -type \"double3\" -32.768203 10.913915 81.55415"
+		"rotate" " -type \"double3\" -0.00409365 11.234884 89.998321"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightElbowEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightElbowEffector" 
@@ -7569,7 +7569,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightElbowEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestOriginEffector" 
-		"translate" " -type \"double3\" 2.184356 103.600746 143.333786"
+		"translate" " -type \"double3\" 0 106.853226 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestOriginEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestOriginEffector" 
@@ -7577,7 +7577,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestOriginEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestOriginEffector" 
-		"rotate" " -type \"double3\" 1.305953 -18.009888 -0.52151"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestOriginEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestOriginEffector" 
@@ -7585,7 +7585,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestOriginEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestEndEffector" 
-		"translate" " -type \"double3\" 2.448359 143.18454 143.694458"
+		"translate" " -type \"double3\" 4.76837e-007 146.441772 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestEndEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestEndEffector" 
@@ -7593,7 +7593,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestEndEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestEndEffector" 
-		"rotate" " -type \"double3\" -0.151817 -29.999307 -0.574567"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestEndEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestEndEffector" 
@@ -7601,7 +7601,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_ChestEndEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftFootEffector" 
-		"translate" " -type \"double3\" 32.56538 2.06124 155.312088"
+		"translate" " -type \"double3\" 8.909993 1.887244 12.954716"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftFootEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftFootEffector" 
@@ -7609,7 +7609,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftFootEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftFootEffector" 
-		"rotate" " -type \"double3\" -0.177113 8.317031 5.340282"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftFootEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftFootEffector" 
@@ -7617,7 +7617,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftFootEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightFootEffector" 
-		"translate" " -type \"double3\" -26.432735 1.810931 154.46785"
+		"translate" " -type \"double3\" -8.911071 1.887243 12.955173"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightFootEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightFootEffector" 
@@ -7625,7 +7625,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightFootEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightFootEffector" 
-		"rotate" " -type \"double3\" 0.158201 -6.104393 -2.96348"
+		"rotate" " -type \"double3\" 1.06722e-005 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightFootEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightFootEffector" 
@@ -7633,7 +7633,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightFootEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftShoulderEffector" 
-		"translate" " -type \"double3\" 17.78256 143.03096 152.548004"
+		"translate" " -type \"double3\" 17.707241 146.44191 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftShoulderEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftShoulderEffector" 
@@ -7641,7 +7641,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftShoulderEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftShoulderEffector" 
-		"rotate" " -type \"double3\" 31.221166 4.953829 -88.217944"
+		"rotate" " -type \"double3\" -0.0105645 10.992195 -90.015886"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftShoulderEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftShoulderEffector" 
@@ -7649,7 +7649,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftShoulderEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightShoulderEffector" 
-		"translate" " -type \"double3\" -12.885956 143.33873 134.841049"
+		"translate" " -type \"double3\" -17.707266 146.4422 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightShoulderEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightShoulderEffector" 
@@ -7657,7 +7657,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightShoulderEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightShoulderEffector" 
-		"rotate" " -type \"double3\" -34.53368 -20.169672 101.933727"
+		"rotate" " -type \"double3\" -0.00847004 -10.995127 90.017518"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightShoulderEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightShoulderEffector" 
@@ -7665,7 +7665,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightShoulderEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HeadEffector" 
-		"translate" " -type \"double3\" 5.224722 160.880707 139.193115"
+		"translate" " -type \"double3\" 0 163.33078 7.653666"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HeadEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HeadEffector" 
@@ -7673,7 +7673,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HeadEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HeadEffector" 
-		"rotate" " -type \"double3\" -30.000141 -29.99947 -0.574595"
+		"rotate" " -type \"double3\" 45.000011 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HeadEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HeadEffector" 
@@ -7681,7 +7681,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_HeadEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHipEffector" 
-		"translate" " -type \"double3\" 10.509497 90.127144 145.486786"
+		"translate" " -type \"double3\" 8.90998 93.583221 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHipEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHipEffector" 
@@ -7689,7 +7689,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHipEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHipEffector" 
-		"rotate" " -type \"double3\" -6.884016 -19.927987 12.793906"
+		"rotate" " -type \"double3\" -3.186781 -1.36551e-005 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHipEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHipEffector" 
@@ -7697,7 +7697,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHipEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHipEffector" 
-		"translate" " -type \"double3\" -6.496504 90.555603 140.179703"
+		"translate" " -type \"double3\" -8.90998 93.583221 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHipEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHipEffector" 
@@ -7705,7 +7705,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHipEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHipEffector" 
-		"rotate" " -type \"double3\" -9.544411 -17.59645 -12.223902"
+		"rotate" " -type \"double3\" -3.185903 -1.94426e-005 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHipEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHipEffector" 
@@ -7713,7 +7713,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHipEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumbEffector" 
-		"translate" " -type \"double3\" 9.579564 78.925713 159.466705"
+		"translate" " -type \"double3\" 15.119545 82.483742 6.736607"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumbEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumbEffector" 
@@ -7721,7 +7721,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumbEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumbEffector" 
-		"rotate" " -type \"double3\" 44.999895 -10.361775 -96.629189"
+		"rotate" " -type \"double3\" 15.000006 -11.233524 -90.000352"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumbEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumbEffector" 
@@ -7729,7 +7729,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumbEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndexEffector" 
-		"translate" " -type \"double3\" 10.878092 73.287506 160.696182"
+		"translate" " -type \"double3\" 16.914782 76.857445 7.066982"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndexEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndexEffector" 
@@ -7737,7 +7737,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndexEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndexEffector" 
-		"rotate" " -type \"double3\" 44.999919 -10.361469 -96.629446"
+		"rotate" " -type \"double3\" 15.000006 -11.233524 -90.000352"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndexEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndexEffector" 
@@ -7745,7 +7745,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndexEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddleEffector" 
-		"translate" " -type \"double3\" 12.705904 72.014595 159.326736"
+		"translate" " -type \"double3\" 17.846102 75.632271 4.953163"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddleEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddleEffector" 
@@ -7753,7 +7753,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddleEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddleEffector" 
-		"rotate" " -type \"double3\" 45.00009 -10.36171 -96.629501"
+		"rotate" " -type \"double3\" 15.000021 -11.233511 -90.000401"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddleEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddleEffector" 
@@ -7761,7 +7761,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddleEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandRingEffector" 
-		"translate" " -type \"double3\" 14.151361 72.339439 157.64183"
+		"translate" " -type \"double3\" 18.272367 76.000877 2.781499"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandRingEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandRingEffector" 
@@ -7769,7 +7769,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandRingEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandRingEffector" 
-		"rotate" " -type \"double3\" 44.999936 -10.361476 -96.629465"
+		"rotate" " -type \"double3\" 15.000018 -11.233501 -90.00043"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandRingEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandRingEffector" 
@@ -7777,7 +7777,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandRingEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinkyEffector" 
-		"translate" " -type \"double3\" 15.059258 73.999535 155.603134"
+		"translate" " -type \"double3\" 18.0424 77.69841 0.590133"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinkyEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinkyEffector" 
@@ -7785,7 +7785,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinkyEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinkyEffector" 
-		"rotate" " -type \"double3\" 44.999997 -10.361613 -96.629628"
+		"rotate" " -type \"double3\" 15.000018 -11.233501 -90.00043"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinkyEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinkyEffector" 
@@ -7793,7 +7793,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinkyEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandThumbEffector" 
-		"translate" " -type \"double3\" -16.778177 82.125443 136.918488"
+		"translate" " -type \"double3\" -15.072898 82.521599 6.905808"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandThumbEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandThumbEffector" 
@@ -7801,7 +7801,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandThumbEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandThumbEffector" 
-		"rotate" " -type \"double3\" -45.000133 9.031396 75.998783"
+		"rotate" " -type \"double3\" 15.000006 11.230952 89.998341"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandThumbEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandThumbEffector" 
@@ -7809,7 +7809,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandThumbEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandIndexEffector" 
-		"translate" " -type \"double3\" -17.882891 76.309822 135.321594"
+		"translate" " -type \"double3\" -17.074833 76.742012 6.480665"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandIndexEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandIndexEffector" 
@@ -7817,7 +7817,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandIndexEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandIndexEffector" 
-		"rotate" " -type \"double3\" -44.999846 9.031849 75.998981"
+		"rotate" " -type \"double3\" 15.000016 11.230951 89.9984"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandIndexEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandIndexEffector" 
@@ -7825,7 +7825,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandIndexEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddleEffector" 
-		"translate" " -type \"double3\" -16.838108 74.96553 133.701721"
+		"translate" " -type \"double3\" -17.933813 75.575096 4.630476"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddleEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddleEffector" 
@@ -7833,7 +7833,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddleEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddleEffector" 
-		"rotate" " -type \"double3\" -45.000133 9.032163 75.999178"
+		"rotate" " -type \"double3\" 15.000018 11.230936 89.99841"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddleEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddleEffector" 
@@ -7841,7 +7841,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddleEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandRingEffector" 
-		"translate" " -type \"double3\" -15.201548 75.132645 132.219284"
+		"translate" " -type \"double3\" -18.352076 75.948921 2.488239"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandRingEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandRingEffector" 
@@ -7849,7 +7849,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandRingEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandRingEffector" 
-		"rotate" " -type \"double3\" -44.999917 9.032119 75.999199"
+		"rotate" " -type \"double3\" 15.000018 11.230936 89.99841"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandRingEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandRingEffector" 
@@ -7857,7 +7857,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandRingEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandPinkyEffector" 
-		"translate" " -type \"double3\" -13.138591 76.631172 131.241653"
+		"translate" " -type \"double3\" -18.103065 77.65078 0.367201"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandPinkyEffector" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandPinkyEffector" 
@@ -7865,7 +7865,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandPinkyEffector" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandPinkyEffector" 
-		"rotate" " -type \"double3\" -44.999855 9.032109 75.999529"
+		"rotate" " -type \"double3\" 15.000113 11.23078 89.999016"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandPinkyEffector" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandPinkyEffector" 
@@ -7873,7 +7873,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_RightHandPinkyEffector" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips" 
-		"translate" " -type \"double3\" 2.090536 96.606354 143.069748"
+		"translate" " -type \"double3\" 0 99.853226 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips" 
 		"translateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips" 
@@ -7881,7 +7881,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips" 
 		"translateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips" 
-		"rotate" " -type \"double3\" 2.264494 -17.326501 -1.443219"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips" 
@@ -7889,7 +7889,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg" 
-		"rotate" " -type \"double3\" -4.882697 -2.56831 13.497117"
+		"rotate" " -type \"double3\" -3.186781 -1.36551e-005 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg" 
@@ -7897,7 +7897,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg" 
-		"rotate" " -type \"double3\" 19.743776 15.577322 5.311756"
+		"rotate" " -type \"double3\" 6.700513 -1.89306e-005 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg" 
@@ -7905,7 +7905,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg|DavidAIEChacatersean:Character1_Ctrl_LeftFoot" 
-		"rotate" " -type \"double3\" -12.315607 9.676702 -12.977217"
+		"rotate" " -type \"double3\" -3.513732 3.24056e-005 -3.44038e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg|DavidAIEChacatersean:Character1_Ctrl_LeftFoot" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg|DavidAIEChacatersean:Character1_Ctrl_LeftFoot" 
@@ -7913,7 +7913,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg|DavidAIEChacatersean:Character1_Ctrl_LeftFoot" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg|DavidAIEChacatersean:Character1_Ctrl_LeftFoot|DavidAIEChacatersean:Character1_Ctrl_LeftToeBase" 
-		"rotate" " -type \"double3\" 7.1159e-005 -1.7037e-006 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg|DavidAIEChacatersean:Character1_Ctrl_LeftFoot|DavidAIEChacatersean:Character1_Ctrl_LeftToeBase" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg|DavidAIEChacatersean:Character1_Ctrl_LeftFoot|DavidAIEChacatersean:Character1_Ctrl_LeftToeBase" 
@@ -7921,7 +7921,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_LeftUpLeg|DavidAIEChacatersean:Character1_Ctrl_LeftLeg|DavidAIEChacatersean:Character1_Ctrl_LeftFoot|DavidAIEChacatersean:Character1_Ctrl_LeftToeBase" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg" 
-		"rotate" " -type \"double3\" -14.966467 -0.96028 -10.241615"
+		"rotate" " -type \"double3\" -3.185903 -1.94426e-005 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg" 
@@ -7929,7 +7929,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg" 
-		"rotate" " -type \"double3\" 18.131298 6.970994 2.420625"
+		"rotate" " -type \"double3\" 6.69867 4.98554e-006 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg" 
@@ -7937,7 +7937,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg|DavidAIEChacatersean:Character1_Ctrl_RightFoot" 
-		"rotate" " -type \"double3\" -6.500025 5.200912 7.341245"
+		"rotate" " -type \"double3\" -3.512757 1.43962e-005 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg|DavidAIEChacatersean:Character1_Ctrl_RightFoot" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg|DavidAIEChacatersean:Character1_Ctrl_RightFoot" 
@@ -7945,7 +7945,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg|DavidAIEChacatersean:Character1_Ctrl_RightFoot" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg|DavidAIEChacatersean:Character1_Ctrl_RightFoot|DavidAIEChacatersean:Character1_Ctrl_RightToeBase" 
-		"rotate" " -type \"double3\" 0 3.29698e-006 1.38096e-005"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg|DavidAIEChacatersean:Character1_Ctrl_RightFoot|DavidAIEChacatersean:Character1_Ctrl_RightToeBase" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg|DavidAIEChacatersean:Character1_Ctrl_RightFoot|DavidAIEChacatersean:Character1_Ctrl_RightToeBase" 
@@ -7953,7 +7953,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_RightUpLeg|DavidAIEChacatersean:Character1_Ctrl_RightLeg|DavidAIEChacatersean:Character1_Ctrl_RightFoot|DavidAIEChacatersean:Character1_Ctrl_RightToeBase" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine" 
-		"rotate" " -type \"double3\" -0.683913 -0.650319 0.903006"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine" 
@@ -7961,7 +7961,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1" 
-		"rotate" " -type \"double3\" -0.744125 -5.991652 0.0798072"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1" 
@@ -7969,7 +7969,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2" 
-		"rotate" " -type \"double3\" -0.739639 -5.997121 0.0699059"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2" 
@@ -7977,7 +7977,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder" 
-		"rotate" " -type \"double3\" 2.85049e-005 -0.000731316 0.000350798"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder" 
@@ -7985,7 +7985,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm" 
-		"rotate" " -type \"double3\" -178.903169 -185.618452 89.556378"
+		"rotate" " -type \"double3\" -0.0105647 10.992195 -90.015887"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm" 
@@ -7993,7 +7993,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm" 
-		"rotate" " -type \"double3\" 0.119306 -17.281175 0.0290821"
+		"rotate" " -type \"double3\" 4.1804e-005 -22.229603 0.0122155"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm" 
@@ -8001,7 +8001,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand" 
-		"rotate" " -type \"double3\" 13.365376 -0.157477 0.739981"
+		"rotate" " -type \"double3\" 15.008151 0.00388024 -5.60998e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand" 
@@ -8009,7 +8009,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1" 
-		"rotate" " -type \"double3\" -0.000159426 -0.000207892 -0.000495271"
+		"rotate" " -type \"double3\" 5.40495e-006 -6.2979e-006 1.71509e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1" 
@@ -8017,7 +8017,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2" 
-		"rotate" " -type \"double3\" 2.16751e-005 5.2934e-005 9.15871e-005"
+		"rotate" " -type \"double3\" -5.51424e-006 0 -1.09552e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2" 
@@ -8025,7 +8025,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb3" 
-		"rotate" " -type \"double3\" -1.70478e-005 6.05036e-005 6.88993e-005"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb3" 
@@ -8033,7 +8033,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb3|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb4" 
-		"rotate" " -type \"double3\" 0.000139274 -7.92055e-005 0.000318811"
+		"rotate" " -type \"double3\" 2.0082e-006 0 1.0718e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb3|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb3|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb4" 
@@ -8041,7 +8041,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb1|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb2|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb3|DavidAIEChacatersean:Character1_Ctrl_LeftHandThumb4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1" 
-		"rotate" " -type \"double3\" -0.000159426 -0.000207892 -0.000495271"
+		"rotate" " -type \"double3\" 5.40495e-006 -6.2979e-006 1.71509e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1" 
@@ -8049,7 +8049,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2" 
-		"rotate" " -type \"double3\" 6.14736e-005 -7.80991e-005 -0.00028102"
+		"rotate" " -type \"double3\" -5.51424e-006 0 -1.09552e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2" 
@@ -8057,7 +8057,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex3" 
-		"rotate" " -type \"double3\" -7.90664e-005 0.000228179 4.58813e-005"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex3" 
@@ -8065,7 +8065,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex3|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex4" 
-		"rotate" " -type \"double3\" -2.43408e-005 -6.22359e-005 -0.000139212"
+		"rotate" " -type \"double3\" 2.0082e-006 0 1.0718e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex3|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex3|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex4" 
@@ -8073,7 +8073,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex1|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex2|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex3|DavidAIEChacatersean:Character1_Ctrl_LeftHandIndex4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1" 
-		"rotate" " -type \"double3\" -0.000159426 -0.000207892 -0.000495271"
+		"rotate" " -type \"double3\" 5.40495e-006 -6.2979e-006 1.71509e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1" 
@@ -8081,7 +8081,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2" 
-		"rotate" " -type \"double3\" 0 -0.000188231 -0.000335588"
+		"rotate" " -type \"double3\" -1.00883e-005 -2.60527e-006 -6.98682e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2" 
@@ -8089,7 +8089,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle3" 
-		"rotate" " -type \"double3\" 0.000142383 0.000130045 0.000232073"
+		"rotate" " -type \"double3\" 9.48364e-006 3.35816e-006 9.96241e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle3" 
@@ -8097,7 +8097,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle3|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle4" 
-		"rotate" " -type \"double3\" -3.76672e-005 -0.000123939 -9.89706e-005"
+		"rotate" " -type \"double3\" 0 -3.67521e-006 -2.01872e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle3|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle3|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle4" 
@@ -8105,7 +8105,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle3|DavidAIEChacatersean:Character1_Ctrl_LeftHandMiddle4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1" 
-		"rotate" " -type \"double3\" -0.000159426 -0.000207892 -0.000495271"
+		"rotate" " -type \"double3\" 5.40495e-006 -6.2979e-006 1.71509e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1" 
@@ -8113,7 +8113,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2" 
-		"rotate" " -type \"double3\" -4.82119e-005 -2.76788e-005 -0.000563766"
+		"rotate" " -type \"double3\" -8.40769e-006 2.69665e-006 -9.21431e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2" 
@@ -8121,7 +8121,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing3" 
-		"rotate" " -type \"double3\" 4.37971e-005 0.000160555 0.000321287"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing3" 
@@ -8129,7 +8129,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing3|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing4" 
-		"rotate" " -type \"double3\" 7.72065e-005 3.21765e-005 -0.000230836"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing3|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing3|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing4" 
@@ -8137,7 +8137,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing1|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing2|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing3|DavidAIEChacatersean:Character1_Ctrl_LeftHandRing4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1" 
-		"rotate" " -type \"double3\" -0.000159426 -0.000207892 -0.000495271"
+		"rotate" " -type \"double3\" 5.40495e-006 -6.2979e-006 1.71509e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1" 
@@ -8145,7 +8145,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2" 
-		"rotate" " -type \"double3\" -4.50562e-005 -0.000152953 -0.000540141"
+		"rotate" " -type \"double3\" -6.66943e-006 1.73877e-006 -9.18174e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2" 
@@ -8153,7 +8153,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky3" 
-		"rotate" " -type \"double3\" 7.19345e-005 7.4733e-005 0.00028083"
+		"rotate" " -type \"double3\" -1.73826e-006 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky3" 
@@ -8161,7 +8161,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky3|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky4" 
-		"rotate" " -type \"double3\" -0.000141834 0.000113819 -0.000203549"
+		"rotate" " -type \"double3\" 1.73826e-006 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky3|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky3|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky4" 
@@ -8169,7 +8169,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_LeftShoulder|DavidAIEChacatersean:Character1_Ctrl_LeftArm|DavidAIEChacatersean:Character1_Ctrl_LeftForeArm|DavidAIEChacatersean:Character1_Ctrl_LeftHand|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky1|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky2|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky3|DavidAIEChacatersean:Character1_Ctrl_LeftHandPinky4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder" 
-		"rotate" " -type \"double3\" 5.92103e-005 0.00033321 7.98581e-005"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder" 
@@ -8177,7 +8177,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm" 
-		"rotate" " -type \"double3\" -2.350027 -23.74596 90.229568"
+		"rotate" " -type \"double3\" -0.00846999 -10.995127 90.017517"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm" 
@@ -8185,7 +8185,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm" 
-		"rotate" " -type \"double3\" 0.0161523 36.991661 -0.0733055"
+		"rotate" " -type \"double3\" 0.00110141 22.230018 -0.0168778"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm" 
@@ -8193,7 +8193,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand" 
-		"rotate" " -type \"double3\" -11.338589 1.424861 -5.607981"
+		"rotate" " -type \"double3\" 15.004099 -0.00392277 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand" 
@@ -8201,7 +8201,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1" 
-		"rotate" " -type \"double3\" -5.42666e-005 -3.93005e-005 -0.000149429"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1" 
@@ -8209,7 +8209,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2" 
-		"rotate" " -type \"double3\" -0.000181916 -3.42848e-005 -0.000232267"
+		"rotate" " -type \"double3\" -2.51799e-006 -2.83722e-006 2.17665e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2" 
@@ -8217,7 +8217,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb3" 
-		"rotate" " -type \"double3\" 4.80437e-005 -4.66316e-005 -1.73553e-005"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb3" 
@@ -8225,7 +8225,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb3|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb4" 
-		"rotate" " -type \"double3\" -6.72229e-005 0.000106298 5.1254e-005"
+		"rotate" " -type \"double3\" 2.5972e-006 0 -3.13246e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb3|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb3|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb4" 
@@ -8233,7 +8233,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb1|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb2|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb3|DavidAIEChacatersean:Character1_Ctrl_RightHandThumb4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1" 
-		"rotate" " -type \"double3\" -5.42666e-005 -3.93005e-005 -0.000149429"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1" 
@@ -8241,7 +8241,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2" 
-		"rotate" " -type \"double3\" -8.96719e-005 0.000129669 0.000614696"
+		"rotate" " -type \"double3\" 0 0 8.04551e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2" 
@@ -8249,7 +8249,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex3" 
-		"rotate" " -type \"double3\" 0.000212045 -2.86592e-005 -0.000405889"
+		"rotate" " -type \"double3\" -3.9187e-006 8.83666e-006 -1.94665e-006"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex3" 
@@ -8257,7 +8257,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex3|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex4" 
-		"rotate" " -type \"double3\" -0.000126276 -0.000122347 0.000494993"
+		"rotate" " -type \"double3\" 1.12604e-005 -8.95735e-006 -1.9248e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex3|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex3|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex4" 
@@ -8265,7 +8265,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex1|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex2|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex3|DavidAIEChacatersean:Character1_Ctrl_RightHandIndex4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1" 
-		"rotate" " -type \"double3\" -5.42666e-005 -3.93005e-005 -0.000149429"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1" 
@@ -8273,7 +8273,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2" 
-		"rotate" " -type \"double3\" -0.000116869 0.000191521 0.000497307"
+		"rotate" " -type \"double3\" 0 0 7.03738e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2" 
@@ -8281,7 +8281,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle3" 
-		"rotate" " -type \"double3\" -7.9595e-005 -6.29306e-006 7.21946e-005"
+		"rotate" " -type \"double3\" -4.96895e-006 -1.48758e-006 2.15709e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle3" 
@@ -8289,7 +8289,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle3|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle4" 
-		"rotate" " -type \"double3\" 0.000115793 -4.376e-006 1.6715e-005"
+		"rotate" " -type \"double3\" 0 2.91649e-006 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle3|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle3|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle4" 
@@ -8297,7 +8297,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle1|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle2|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle3|DavidAIEChacatersean:Character1_Ctrl_RightHandMiddle4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1" 
-		"rotate" " -type \"double3\" -5.42666e-005 -3.93005e-005 -0.000149429"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1" 
@@ -8305,7 +8305,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2" 
-		"rotate" " -type \"double3\" -1.79513e-006 0.00027783 0.000532092"
+		"rotate" " -type \"double3\" 0 0 7.03738e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2" 
@@ -8313,7 +8313,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2|DavidAIEChacatersean:Character1_Ctrl_RightHandRing3" 
-		"rotate" " -type \"double3\" 1.96111e-005 -0.00013757 1.82125e-005"
+		"rotate" " -type \"double3\" -4.96895e-006 -1.48758e-006 2.15709e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2|DavidAIEChacatersean:Character1_Ctrl_RightHandRing3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2|DavidAIEChacatersean:Character1_Ctrl_RightHandRing3" 
@@ -8321,7 +8321,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2|DavidAIEChacatersean:Character1_Ctrl_RightHandRing3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2|DavidAIEChacatersean:Character1_Ctrl_RightHandRing3|DavidAIEChacatersean:Character1_Ctrl_RightHandRing4" 
-		"rotate" " -type \"double3\" -1.38744e-005 0.000119883 0.000158568"
+		"rotate" " -type \"double3\" 0 2.91649e-006 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2|DavidAIEChacatersean:Character1_Ctrl_RightHandRing3|DavidAIEChacatersean:Character1_Ctrl_RightHandRing4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2|DavidAIEChacatersean:Character1_Ctrl_RightHandRing3|DavidAIEChacatersean:Character1_Ctrl_RightHandRing4" 
@@ -8329,7 +8329,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandRing1|DavidAIEChacatersean:Character1_Ctrl_RightHandRing2|DavidAIEChacatersean:Character1_Ctrl_RightHandRing3|DavidAIEChacatersean:Character1_Ctrl_RightHandRing4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1" 
-		"rotate" " -type \"double3\" -5.42666e-005 -3.93005e-005 -0.000149429"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1" 
@@ -8337,7 +8337,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2" 
-		"rotate" " -type \"double3\" -8.33788e-005 3.66174e-005 0.000829715"
+		"rotate" " -type \"double3\" -3.12687e-005 0 0.000706509"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2" 
@@ -8345,7 +8345,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky3" 
-		"rotate" " -type \"double3\" 0.00011192 -0.000133099 -5.69759e-005"
+		"rotate" " -type \"double3\" 3.43632e-006 2.42149e-006 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky3" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky3" 
@@ -8353,7 +8353,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky3" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky3|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky4" 
-		"rotate" " -type \"double3\" -0.000117562 8.38519e-005 0.000119007"
+		"rotate" " -type \"double3\" 3.53293e-006 7.7251e-006 -2.29381e-005"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky3|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky4" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky3|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky4" 
@@ -8361,7 +8361,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_RightShoulder|DavidAIEChacatersean:Character1_Ctrl_RightArm|DavidAIEChacatersean:Character1_Ctrl_RightForeArm|DavidAIEChacatersean:Character1_Ctrl_RightHand|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky1|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky2|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky3|DavidAIEChacatersean:Character1_Ctrl_RightHandPinky4" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_Neck" 
-		"rotate" " -type \"double3\" -14.9238 -2.70167e-006 2.63136e-005"
+		"rotate" " -type \"double3\" 22.500019 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_Neck" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_Neck" 
@@ -8369,7 +8369,7 @@ createNode reference -n "DavidAIEChacaterseanRN";
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_Neck" 
 		"rotateX" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_Neck|DavidAIEChacatersean:Character1_Ctrl_Head" 
-		"rotate" " -type \"double3\" -14.924542 -0.000139689 -8.89465e-005"
+		"rotate" " -type \"double3\" 22.499996 0 0"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_Neck|DavidAIEChacatersean:Character1_Ctrl_Head" 
 		"rotateZ" " -av"
 		2 "|DavidAIEChacatersean:David_Animation|DavidAIEChacatersean:Character1_Ctrl_Reference|DavidAIEChacatersean:Character1_Ctrl_Hips|DavidAIEChacatersean:Character1_Ctrl_Spine|DavidAIEChacatersean:Character1_Ctrl_Spine1|DavidAIEChacatersean:Character1_Ctrl_Spine2|DavidAIEChacatersean:Character1_Ctrl_Neck|DavidAIEChacatersean:Character1_Ctrl_Head" 
@@ -8871,8 +8871,8 @@ createNode reference -n "Kick_024_mtRN";
 		"Kick_024_mtRN"
 		"Kick_024_mtRN" 0
 		"Kick_024_mtRN" 474
-		2 "|Kick_024_mt:Maxx_AD" "visibility" " -av 1"
-		2 "|Kick_024_mt:Maxx_AD|Kick_024_mt:Kick_Ctrl_Reference" "translate" " -type \"double3\" 413.340796 -309.112222 -2786.910345"
+		2 "|Kick_024_mt:Maxx_AD" "visibility" " -av 0"
+		2 "|Kick_024_mt:Maxx_AD|Kick_024_mt:Kick_Ctrl_Reference" "translate" " -type \"double3\" 413.340796 -406.46176 -2786.910345"
 		
 		2 "|Kick_024_mt:Maxx_AD|Kick_024_mt:Kick_Ctrl_Reference" "translateY" " -av"
 		
@@ -8882,58 +8882,56 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "|Kick_024_mt:Maxx_AD|Kick_024_mt:Kick_Ctrl_Reference|Kick_024_mt:Kick_Ctrl_ChestEndEffector" 
 		"visibility" " -k 0 -cb 1 0"
-		2 "Kick_024_mt:Kick_Ctrl_Hips_rotate_BakeResults" "inputB" " -type \"double3\" 14.243041 -15.127473 -0.0335034"
+		2 "Kick_024_mt:Kick_Ctrl_Hips_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_Hips_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Hips_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Hips_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_Hips_translateX_BakeResults" "inputB" " -av 31.750723"
+		2 "Kick_024_mt:Kick_Ctrl_Hips_translateX_BakeResults" "inputB" " -av 0"
+		2 "Kick_024_mt:Kick_Ctrl_Hips_translateY_BakeResults" "inputB" " -av 99.999939"
 		
-		2 "Kick_024_mt:Kick_Ctrl_Hips_translateY_BakeResults" "inputB" " -av 99.787041"
-		
-		2 "Kick_024_mt:Kick_Ctrl_Hips_translateZ_BakeResults" "inputB" " -av -157.587265"
-		
-		2 "Kick_024_mt:Kick_Ctrl_LeftUpLeg_rotate_BakeResults" "inputB" " -type \"double3\" -19.23865 15.088552 -4.542278"
+		2 "Kick_024_mt:Kick_Ctrl_Hips_translateZ_BakeResults" "inputB" " -av 0"
+		2 "Kick_024_mt:Kick_Ctrl_LeftUpLeg_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftUpLeg_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftUpLeg_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftUpLeg_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_LeftLeg_rotate_BakeResults" "inputB" " -type \"double3\" 86.819195 -0.163403 1.621187"
+		2 "Kick_024_mt:Kick_Ctrl_LeftLeg_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftLeg_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftLeg_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftLeg_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_LeftFoot_rotate_BakeResults" "inputB" " -type \"double3\" -5.736791 1.390199 5.660664"
+		2 "Kick_024_mt:Kick_Ctrl_LeftFoot_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftFoot_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftFoot_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftFoot_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_RightUpLeg_rotate_BakeResults" "inputB" " -type \"double3\" -14.325352 -12.97686 -2.338498"
+		2 "Kick_024_mt:Kick_Ctrl_RightUpLeg_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightUpLeg_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightUpLeg_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightUpLeg_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_RightLeg_rotate_BakeResults" "inputB" " -type \"double3\" 30.650523 -4.832245 -2.705708"
+		2 "Kick_024_mt:Kick_Ctrl_RightLeg_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightLeg_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightLeg_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightLeg_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_RightFoot_rotate_BakeResults" "inputB" " -type \"double3\" -26.246721 -3.202844 5.010977"
+		2 "Kick_024_mt:Kick_Ctrl_RightFoot_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightFoot_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightFoot_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightFoot_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_Spine_rotate_BakeResults" "inputB" " -type \"double3\" 7.252442 -2.749379 1.362404"
+		2 "Kick_024_mt:Kick_Ctrl_Spine_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_Spine_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Spine_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Spine_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_LeftArm_rotate_BakeResults" "inputB" " -type \"double3\" -90.976909 -25.41391 31.326038"
+		2 "Kick_024_mt:Kick_Ctrl_LeftArm_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftArm_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftArm_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftArm_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_LeftForeArm_rotate_BakeResults" "inputB" " -type \"double3\" 719.981584 -18.898137 -0.179421"
+		2 "Kick_024_mt:Kick_Ctrl_LeftForeArm_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftForeArm_rotate_BakeResults" "inputBX" " -av"
 		
@@ -8941,17 +8939,17 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftForeArm_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHand_rotate_BakeResults" "inputB" " -type \"double3\" -1.231194 -0.54604 2.942581"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHand_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHand_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHand_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHand_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_RightArm_rotate_BakeResults" "inputB" " -type \"double3\" 25.490569 -18.513608 63.95025"
+		2 "Kick_024_mt:Kick_Ctrl_RightArm_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightArm_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightArm_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightArm_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_RightForeArm_rotate_BakeResults" "inputB" " -type \"double3\" -540.006163 127.649737 -179.916576"
+		2 "Kick_024_mt:Kick_Ctrl_RightForeArm_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightForeArm_rotate_BakeResults" "inputBX" " -av"
 		
@@ -8959,17 +8957,17 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightForeArm_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHand_rotate_BakeResults" "inputB" " -type \"double3\" -2.726785 -13.462399 23.713047"
+		2 "Kick_024_mt:Kick_Ctrl_RightHand_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHand_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHand_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHand_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_Head_rotate_BakeResults" "inputB" " -type \"double3\" -2.54212e-006 -7.22793e-005 -1.0395e-006"
+		2 "Kick_024_mt:Kick_Ctrl_Head_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_Head_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Head_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Head_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_LeftToeBase_rotate_BakeResults" "inputB" " -type \"double3\" 0.000216389 6.45479e-007 7.45944e-007"
+		2 "Kick_024_mt:Kick_Ctrl_LeftToeBase_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftToeBase_rotate_BakeResults" "inputBX" " -av"
 		
@@ -8977,7 +8975,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftToeBase_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightToeBase_rotate_BakeResults" "inputB" " -type \"double3\" 7.18638e-005 0.000472447 8.7898e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightToeBase_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightToeBase_rotate_BakeResults" "inputBX" " -av"
 		
@@ -8985,7 +8983,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightToeBase_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftShoulder_rotate_BakeResults" "inputB" " -type \"double3\" 8.75645e-005 0.664679 0.000405894"
+		2 "Kick_024_mt:Kick_Ctrl_LeftShoulder_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulder_rotate_BakeResults" "inputBX" " -av"
 		
@@ -8993,7 +8991,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulder_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightShoulder_rotate_BakeResults" "inputB" " -type \"double3\" -9.28903e-008 -0.000111779 -0.00025905"
+		2 "Kick_024_mt:Kick_Ctrl_RightShoulder_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulder_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9001,22 +8999,22 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulder_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_Neck_rotate_BakeResults" "inputB" " -type \"double3\" -5.83431e-007 0.000119307 6.08778e-007"
+		2 "Kick_024_mt:Kick_Ctrl_Neck_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_Neck_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Neck_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Neck_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_Spine1_rotate_BakeResults" "inputB" " -type \"double3\" -3.447394 -5.604452 1.518629"
+		2 "Kick_024_mt:Kick_Ctrl_Spine1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_Spine1_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Spine1_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Spine1_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_Spine2_rotate_BakeResults" "inputB" " -type \"double3\" -3.221329 -5.690487 0.042868"
+		2 "Kick_024_mt:Kick_Ctrl_Spine2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_Spine2_rotate_BakeResults" "inputBX" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Spine2_rotate_BakeResults" "inputBY" " -av"
 		2 "Kick_024_mt:Kick_Ctrl_Spine2_rotate_BakeResults" "inputBZ" " -av"
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumb1_rotate_BakeResults" "inputB" " -type \"double3\" -9.74737e-006 -4.33427e-006 -1.01143e-005"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumb1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumb1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9024,7 +9022,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumb1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumb2_rotate_BakeResults" "inputB" " -type \"double3\" 9.74737e-006 4.33427e-006 1.01143e-005"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumb2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumb2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9048,7 +9046,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumb4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex1_rotate_BakeResults" "inputB" " -type \"double3\" -1.83091e-005 -1.09599e-005 -1.12959e-005"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9056,7 +9054,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex2_rotate_BakeResults" "inputB" " -type \"double3\" 1.64333e-005 1.43515e-005 6.16506e-006"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9064,7 +9062,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex2_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex3_rotate_BakeResults" "inputB" " -type \"double3\" -9.58321e-006 -9.93844e-006 -1.77247e-006"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex3_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex3_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9072,7 +9070,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex3_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex4_rotate_BakeResults" "inputB" " -type \"double3\" -6.68596e-006 -1.27002e-005 6.50044e-006"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex4_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex4_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9080,7 +9078,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndex4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddle1_rotate_BakeResults" "inputB" " -type \"double3\" -9.74737e-006 -4.33427e-006 -1.01143e-005"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddle1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddle1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9088,7 +9086,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddle1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddle2_rotate_BakeResults" "inputB" " -type \"double3\" 7.87157e-006 7.7259e-006 4.98341e-006"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddle2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddle2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9112,7 +9110,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddle4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandRing1_rotate_BakeResults" "inputB" " -type \"double3\" -9.74737e-006 -4.33427e-006 -1.01143e-005"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandRing1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRing1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9120,7 +9118,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRing1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandRing2_rotate_BakeResults" "inputB" " -type \"double3\" 7.87157e-006 7.7259e-006 4.98341e-006"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandRing2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRing2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9144,7 +9142,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRing4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky1_rotate_BakeResults" "inputB" " -type \"double3\" -9.74737e-006 -4.33427e-006 -1.01143e-005"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9152,7 +9150,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky2_rotate_BakeResults" "inputB" " -type \"double3\" -1.93998e-006 -1.35286e-007 -0.000450288"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9160,7 +9158,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky2_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky3_rotate_BakeResults" "inputB" " -type \"double3\" 2.14292e-007 1.45668e-007 -6.28932e-007"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky3_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky3_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9168,7 +9166,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky3_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky4_rotate_BakeResults" "inputB" " -type \"double3\" 0 -1.03343e-006 1.29097e-006"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky4_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky4_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9176,7 +9174,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinky4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb1_rotate_BakeResults" "inputB" " -type \"double3\" 2.12966e-007 0 0"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9184,7 +9182,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb2_rotate_BakeResults" "inputB" " -type \"double3\" 9.82322e-007 -4.22373e-007 1.24103e-005"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9192,7 +9190,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb2_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb3_rotate_BakeResults" "inputB" " -type \"double3\" -1.17752e-006 6.57655e-007 -1.23156e-005"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb3_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb3_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9200,7 +9198,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb3_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb4_rotate_BakeResults" "inputB" " -type \"double3\" 4.17012e-007 -4.46336e-008 -1.91363e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb4_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb4_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9208,7 +9206,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumb4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex1_rotate_BakeResults" "inputB" " -type \"double3\" 1.79025e-007 -1.23361e-005 8.87056e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9216,7 +9214,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex2_rotate_BakeResults" "inputB" " -type \"double3\" -2.08991e-008 7.63491e-006 -1.70031e-006"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9224,7 +9222,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex2_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex3_rotate_BakeResults" "inputB" " -type \"double3\" 6.87829e-007 -1.49646e-005 1.14481e-005"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex3_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex3_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9232,7 +9230,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex3_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex4_rotate_BakeResults" "inputB" " -type \"double3\" -6.84703e-007 3.3089e-005 -1.14309e-005"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex4_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex4_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9240,7 +9238,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndex4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle1_rotate_BakeResults" "inputB" " -type \"double3\" 1.79025e-007 -1.23361e-005 8.87056e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9248,7 +9246,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle2_rotate_BakeResults" "inputB" " -type \"double3\" 3.48719e-007 2.68797e-006 7.01754e-005"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9256,7 +9254,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle2_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle3_rotate_BakeResults" "inputB" " -type \"double3\" 8.8713e-008 -2.11218e-005 -8.37894e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle3_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle3_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9264,7 +9262,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle3_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle4_rotate_BakeResults" "inputB" " -type \"double3\" -2.41117e-007 -2.27363e-005 -4.47806e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle4_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle4_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9272,7 +9270,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddle4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandRing1_rotate_BakeResults" "inputB" " -type \"double3\" 1.79025e-007 -1.23361e-005 8.87056e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandRing1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRing1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9280,7 +9278,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRing1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandRing2_rotate_BakeResults" "inputB" " -type \"double3\" 1.16814e-006 5.49675e-005 0.00020442"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandRing2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRing2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9288,7 +9286,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRing2_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandRing3_rotate_BakeResults" "inputB" " -type \"double3\" 5.16436e-008 -1.66272e-005 -7.61593e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandRing3_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRing3_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9296,7 +9294,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRing3_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandRing4_rotate_BakeResults" "inputB" " -type \"double3\" -9.22683e-007 4.17727e-005 -8.61288e-006"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandRing4_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRing4_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9304,7 +9302,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRing4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky1_rotate_BakeResults" "inputB" " -type \"double3\" 1.79025e-007 -1.23361e-005 8.87056e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky1_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky1_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9312,7 +9310,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky1_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky2_rotate_BakeResults" "inputB" " -type \"double3\" 9.18157e-007 -3.30848e-007 0.00100226"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky2_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky2_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9320,7 +9318,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky2_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky3_rotate_BakeResults" "inputB" " -type \"double3\" -3.19448e-007 -5.11117e-006 2.21353e-008"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky3_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky3_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9328,7 +9326,7 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky3_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky4_rotate_BakeResults" "inputB" " -type \"double3\" 6.12276e-007 4.09627e-005 -6.28149e-007"
+		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky4_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky4_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9336,13 +9334,13 @@ createNode reference -n "Kick_024_mtRN";
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinky4_rotate_BakeResults" "inputBZ" " -av"
 		
-		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_translateX_BakeResults" "inputB" " -av 32.14975"
+		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_translateX_BakeResults" "inputB" " -av 0"
 		
-		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_translateY_BakeResults" "inputB" " -av 93.709541"
+		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_translateY_BakeResults" "inputB" " -av 93.729935"
 		
-		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_translateZ_BakeResults" "inputB" " -av -159.076447"
+		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_translateZ_BakeResults" "inputB" " -av -1.46627e-005"
 		
-		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_rotate_BakeResults" "inputB" " -type \"double3\" 14.24304 -15.127473 -0.0335034"
+		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9351,12 +9349,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_HipsEffector_rotate_BakeResults" "inputBZ" " -av"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftAnkleEffector_translateX_BakeResults" "inputB" 
-		" -av 39.996304"
+		" -av 8.909549"
 		2 "Kick_024_mt:Kick_Ctrl_LeftAnkleEffector_translateY_BakeResults" "inputB" 
-		" -av 43.652603"
+		" -av 8.150379"
 		2 "Kick_024_mt:Kick_Ctrl_LeftAnkleEffector_translateZ_BakeResults" "inputB" 
-		" -av -193.683685"
-		2 "Kick_024_mt:Kick_Ctrl_LeftAnkleEffector_rotate_BakeResults" "inputB" " -type \"double3\" 76.632713 -4.865865 3.140608"
+		" -av 0.00304985"
+		2 "Kick_024_mt:Kick_Ctrl_LeftAnkleEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftAnkleEffector_rotate_BakeResults" "inputBX" 
 		" -av"
@@ -9365,13 +9363,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftAnkleEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightAnkleEffector_translateX_BakeResults" "inputB" 
-		" -av 25.746351"
+		" -av -8.909038"
 		2 "Kick_024_mt:Kick_Ctrl_RightAnkleEffector_translateY_BakeResults" "inputB" 
-		" -av 13.800987"
+		" -av 8.150364"
 		2 "Kick_024_mt:Kick_Ctrl_RightAnkleEffector_translateZ_BakeResults" "inputB" 
-		" -av -182.049408"
+		" -av 0.0012877"
 		2 "Kick_024_mt:Kick_Ctrl_RightAnkleEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 6.245278 -37.179617 -6.479448"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightAnkleEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightAnkleEffector_rotate_BakeResults" "inputBY" 
@@ -9379,13 +9377,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightAnkleEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightWristEffector_translateX_BakeResults" "inputB" 
-		" -av 2.898499"
+		" -av -71.709824"
 		2 "Kick_024_mt:Kick_Ctrl_RightWristEffector_translateY_BakeResults" "inputB" 
-		" -av 98.996597"
+		" -av 146.589996"
 		2 "Kick_024_mt:Kick_Ctrl_RightWristEffector_translateZ_BakeResults" "inputB" 
-		" -av -166.940475"
+		" -av 0.000437021"
 		2 "Kick_024_mt:Kick_Ctrl_RightWristEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 0.248199 -3.827066 102.477156"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightWristEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightWristEffector_rotate_BakeResults" "inputBY" 
@@ -9393,12 +9391,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightWristEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftKneeEffector_translateX_BakeResults" "inputB" 
-		" -av 40.298771"
+		" -av 8.909484"
 		2 "Kick_024_mt:Kick_Ctrl_LeftKneeEffector_translateY_BakeResults" "inputB" 
-		" -av 48.95871"
+		" -av 48.851318"
 		2 "Kick_024_mt:Kick_Ctrl_LeftKneeEffector_translateZ_BakeResults" "inputB" 
-		" -av -153.331238"
-		2 "Kick_024_mt:Kick_Ctrl_LeftKneeEffector_rotate_BakeResults" "inputB" " -type \"double3\" 82.517993 0.563327 1.018562"
+		" -av 0.00282478"
+		2 "Kick_024_mt:Kick_Ctrl_LeftKneeEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftKneeEffector_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9407,12 +9405,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftKneeEffector_rotate_BakeResults" "inputBZ" " -av"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightKneeEffector_translateX_BakeResults" "inputB" 
-		" -av 19.450186"
+		" -av -8.908975"
 		2 "Kick_024_mt:Kick_Ctrl_RightKneeEffector_translateY_BakeResults" "inputB" 
-		" -av 49.042"
+		" -av 48.851322"
 		2 "Kick_024_mt:Kick_Ctrl_RightKneeEffector_translateZ_BakeResults" "inputB" 
-		" -av -162.684677"
-		2 "Kick_024_mt:Kick_Ctrl_RightKneeEffector_rotate_BakeResults" "inputB" " -type \"double3\" 34.024004 -31.754329 -9.430448"
+		" -av 0.00124574"
+		2 "Kick_024_mt:Kick_Ctrl_RightKneeEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightKneeEffector_rotate_BakeResults" "inputBX" 
 		" -av"
@@ -9421,12 +9419,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightKneeEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftElbowEffector_translateX_BakeResults" "inputB" 
-		" -av 53.905819"
+		" -av 45.012672"
 		2 "Kick_024_mt:Kick_Ctrl_LeftElbowEffector_translateY_BakeResults" "inputB" 
-		" -av 152.425262"
+		" -av 146.589264"
 		2 "Kick_024_mt:Kick_Ctrl_LeftElbowEffector_translateZ_BakeResults" "inputB" 
-		" -av -112.903084"
-		2 "Kick_024_mt:Kick_Ctrl_LeftElbowEffector_rotate_BakeResults" "inputB" " -type \"double3\" 58.409664 -128.475654 -111.856993"
+		" -av 0.000775933"
+		2 "Kick_024_mt:Kick_Ctrl_LeftElbowEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftElbowEffector_rotate_BakeResults" "inputBX" 
 		" -av"
@@ -9435,13 +9433,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftElbowEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightElbowEffector_translateX_BakeResults" "inputB" 
-		" -av 7.86446"
+		" -av -45.012833"
 		2 "Kick_024_mt:Kick_Ctrl_RightElbowEffector_translateY_BakeResults" "inputB" 
-		" -av 124.814087"
+		" -av 146.590042"
 		2 "Kick_024_mt:Kick_Ctrl_RightElbowEffector_translateZ_BakeResults" "inputB" 
-		" -av -171.579819"
+		" -av 0.00035882"
 		2 "Kick_024_mt:Kick_Ctrl_RightElbowEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" -361.150524 10.007901 -280.887784"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightElbowEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightElbowEffector_rotate_BakeResults" "inputBY" 
@@ -9449,13 +9447,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightElbowEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_ChestOriginEffector_translateX_BakeResults" "inputB" 
-		" -av 31.305239"
+		" -av 3.03984e-006"
 		2 "Kick_024_mt:Kick_Ctrl_ChestOriginEffector_translateY_BakeResults" "inputB" 
-		" -av 106.572128"
+		" -av 106.999947"
 		2 "Kick_024_mt:Kick_Ctrl_ChestOriginEffector_translateZ_BakeResults" "inputB" 
-		" -av -155.924698"
+		" -av 1.78814e-005"
 		2 "Kick_024_mt:Kick_Ctrl_ChestOriginEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 21.334601 -18.126477 0.642769"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_ChestOriginEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_ChestOriginEffector_rotate_BakeResults" "inputBY" 
@@ -9463,12 +9461,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_ChestOriginEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_ChestEndEffector_translateX_BakeResults" "inputB" 
-		" -av 26.723881"
+		" -av 1.90735e-006"
 		2 "Kick_024_mt:Kick_Ctrl_ChestEndEffector_translateY_BakeResults" "inputB" 
-		" -av 144.157776"
+		" -av 146.58847"
 		2 "Kick_024_mt:Kick_Ctrl_ChestEndEffector_translateZ_BakeResults" "inputB" 
-		" -av -144.52478"
-		2 "Kick_024_mt:Kick_Ctrl_ChestEndEffector_rotate_BakeResults" "inputB" " -type \"double3\" 15.880907 -29.30273 -2.033827"
+		" -av -1.12057e-005"
+		2 "Kick_024_mt:Kick_Ctrl_ChestEndEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_ChestEndEffector_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9477,12 +9475,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_ChestEndEffector_rotate_BakeResults" "inputBZ" " -av"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftFootEffector_translateX_BakeResults" "inputB" 
-		" -av 41.0285"
+		" -av 8.909555"
 		2 "Kick_024_mt:Kick_Ctrl_LeftFootEffector_translateY_BakeResults" "inputB" 
-		" -av 29.636562"
+		" -av 1.888079"
 		2 "Kick_024_mt:Kick_Ctrl_LeftFootEffector_translateZ_BakeResults" "inputB" 
-		" -av -196.770126"
-		2 "Kick_024_mt:Kick_Ctrl_LeftFootEffector_rotate_BakeResults" "inputB" " -type \"double3\" 76.63293 -4.865865 3.140609"
+		" -av 12.957781"
+		2 "Kick_024_mt:Kick_Ctrl_LeftFootEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftFootEffector_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9491,12 +9489,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftFootEffector_rotate_BakeResults" "inputBZ" " -av"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightFootEffector_translateX_BakeResults" "inputB" 
-		" -av 17.560459"
+		" -av -8.910107"
 		2 "Kick_024_mt:Kick_Ctrl_RightFootEffector_translateY_BakeResults" "inputB" 
-		" -av 7.047176"
+		" -av 1.888083"
 		2 "Kick_024_mt:Kick_Ctrl_RightFootEffector_translateZ_BakeResults" "inputB" 
-		" -av -172.332474"
-		2 "Kick_024_mt:Kick_Ctrl_RightFootEffector_rotate_BakeResults" "inputB" " -type \"double3\" 6.24531 -37.179148 -6.479383"
+		" -av 12.956034"
+		2 "Kick_024_mt:Kick_Ctrl_RightFootEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightFootEffector_rotate_BakeResults" "inputBX" 
 		" -av"
@@ -9505,13 +9503,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightFootEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulderEffector_translateX_BakeResults" "inputB" 
-		" -av 42.214668"
+		" -av 17.707235"
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulderEffector_translateY_BakeResults" "inputB" 
-		" -av 143.641891"
+		" -av 146.588577"
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulderEffector_translateZ_BakeResults" "inputB" 
-		" -av -135.962921"
+		" -av -1.75238e-005"
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulderEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" -95.855356 -57.620129 36.922339"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulderEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulderEffector_rotate_BakeResults" "inputBY" 
@@ -9519,26 +9517,26 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftShoulderEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulderEffector_translateX_BakeResults" "inputB" 
-		" -av 11.292028"
+		" -av -17.707251"
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulderEffector_translateY_BakeResults" "inputB" 
-		" -av 144.706268"
+		" -av 146.588882"
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulderEffector_translateZ_BakeResults" "inputB" 
-		" -av -153.191025"
+		" -av -1.78814e-005"
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulderEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" -1.448509 -42.332469 80.225027"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulderEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulderEffector_rotate_BakeResults" "inputBY" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightShoulderEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
-		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_translateX_BakeResults" "inputB" " -av 24.888147"
+		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_translateX_BakeResults" "inputB" " -av 4.47035e-006"
 		
-		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_translateY_BakeResults" "inputB" " -av 161.94281"
+		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_translateY_BakeResults" "inputB" " -av 164.999863"
 		
-		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_translateZ_BakeResults" "inputB" " -av -140.131348"
+		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_translateZ_BakeResults" "inputB" " -av 1.26362e-005"
 		
-		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_rotate_BakeResults" "inputB" " -type \"double3\" 15.880896 -29.302683 -2.033812"
+		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9547,12 +9545,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_HeadEffector_rotate_BakeResults" "inputBZ" " -av"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHipEffector_translateX_BakeResults" "inputB" 
-		" -av 40.750984"
+		" -av 8.909986"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHipEffector_translateY_BakeResults" "inputB" 
-		" -av 93.704514"
+		" -av 93.729927"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHipEffector_translateZ_BakeResults" "inputB" 
-		" -av -156.751236"
-		2 "Kick_024_mt:Kick_Ctrl_LeftHipEffector_rotate_BakeResults" "inputB" " -type \"double3\" -4.320115 0.604404 -0.610403"
+		" -av -2.00272e-005"
+		2 "Kick_024_mt:Kick_Ctrl_LeftHipEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHipEffector_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9561,12 +9559,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftHipEffector_rotate_BakeResults" "inputBZ" " -av"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHipEffector_translateX_BakeResults" "inputB" 
-		" -av 23.548515"
+		" -av -8.909986"
 		2 "Kick_024_mt:Kick_Ctrl_RightHipEffector_translateY_BakeResults" "inputB" 
-		" -av 93.714569"
+		" -av 93.729935"
 		2 "Kick_024_mt:Kick_Ctrl_RightHipEffector_translateZ_BakeResults" "inputB" 
-		" -av -161.401672"
-		2 "Kick_024_mt:Kick_Ctrl_RightHipEffector_rotate_BakeResults" "inputB" " -type \"double3\" 1.840273 -27.049469 -6.078363"
+		" -av -9.29832e-006"
+		2 "Kick_024_mt:Kick_Ctrl_RightHipEffector_rotate_BakeResults" "inputB" " -type \"double3\" 0 0 0"
 		
 		2 "Kick_024_mt:Kick_Ctrl_RightHipEffector_rotate_BakeResults" "inputBX" " -av"
 		
@@ -9575,13 +9573,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightHipEffector_rotate_BakeResults" "inputBZ" " -av"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumbEffector_translateX_BakeResults" "inputB" 
-		" -av 59.164989"
+		" -av 83.781013"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumbEffector_translateY_BakeResults" "inputB" 
-		" -av 178.134659"
+		" -av 145.254807"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumbEffector_translateZ_BakeResults" "inputB" 
-		" -av -83.903664"
+		" -av 4.990527"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumbEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 58.444197 -131.28011 246.512478"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumbEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumbEffector_rotate_BakeResults" "inputBY" 
@@ -9589,13 +9587,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandThumbEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndexEffector_translateX_BakeResults" "inputB" 
-		" -av 62.517139"
+		" -av 89.363861"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndexEffector_translateY_BakeResults" "inputB" 
-		" -av 181.246216"
+		" -av 146.789108"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndexEffector_translateZ_BakeResults" "inputB" 
-		" -av -80.152855"
+		" -av 3.780177"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndexEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 58.444181 -131.280109 246.51249"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndexEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndexEffector_rotate_BakeResults" "inputBY" 
@@ -9603,13 +9601,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandIndexEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddleEffector_translateX_BakeResults" "inputB" 
-		" -av 64.492172"
+		" -av 90.153732"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddleEffector_translateY_BakeResults" "inputB" 
-		" -av 180.105499"
+		" -av 147.090317"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddleEffector_translateZ_BakeResults" "inputB" 
-		" -av -78.874321"
+		" -av 1.305885"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddleEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 58.444194 -131.280105 246.512476"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddleEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddleEffector_rotate_BakeResults" "inputBY" 
@@ -9617,13 +9615,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandMiddleEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRingEffector_translateX_BakeResults" "inputB" 
-		" -av 65.508011"
+		" -av 89.369133"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRingEffector_translateY_BakeResults" "inputB" 
-		" -av 178.115372"
+		" -av 146.969345"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRingEffector_translateZ_BakeResults" "inputB" 
-		" -av -78.671432"
+		" -av -0.792554"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRingEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 58.444194 -131.280105 246.512476"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRingEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRingEffector_rotate_BakeResults" "inputBY" 
@@ -9631,13 +9629,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandRingEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinkyEffector_translateX_BakeResults" "inputB" 
-		" -av 65.508957"
+		" -av 87.277237"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinkyEffector_translateY_BakeResults" "inputB" 
-		" -av 175.398621"
+		" -av 146.276489"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinkyEffector_translateZ_BakeResults" "inputB" 
-		" -av -79.267975"
+		" -av -2.489741"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinkyEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 58.443907 -131.279719 246.512847"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinkyEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinkyEffector_rotate_BakeResults" "inputBY" 
@@ -9645,13 +9643,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_LeftHandPinkyEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumbEffector_translateX_BakeResults" "inputB" 
-		" -av 6.899296"
+		" -av -83.777458"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumbEffector_translateY_BakeResults" "inputB" 
-		" -av 87.196732"
+		" -av 145.255463"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumbEffector_translateZ_BakeResults" "inputB" 
-		" -av -162.590851"
+		" -av 5.172896"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumbEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 0.248199 -3.827066 102.477156"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumbEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumbEffector_rotate_BakeResults" "inputBY" 
@@ -9659,13 +9657,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightHandThumbEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndexEffector_translateX_BakeResults" "inputB" 
-		" -av 6.568103"
+		" -av -89.363602"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndexEffector_translateY_BakeResults" "inputB" 
-		" -av 81.55175"
+		" -av 146.789749"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndexEffector_translateZ_BakeResults" "inputB" 
-		" -av -164.96077"
+		" -av 3.164688"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndexEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 0.248199 -3.827086 102.477167"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndexEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndexEffector_rotate_BakeResults" "inputBY" 
@@ -9673,13 +9671,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightHandIndexEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddleEffector_translateX_BakeResults" 
-		"inputB" " -av 6.402206"
+		"inputB" " -av -90.14785"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddleEffector_translateY_BakeResults" 
-		"inputB" " -av 80.863564"
+		"inputB" " -av 147.090912"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddleEffector_translateZ_BakeResults" 
-		"inputB" " -av -167.201645"
+		"inputB" " -av 0.96993"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddleEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 0.248195 -3.827097 102.477227"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddleEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddleEffector_rotate_BakeResults" "inputBY" 
@@ -9687,13 +9685,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightHandMiddleEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRingEffector_translateX_BakeResults" "inputB" 
-		" -av 6.312781"
+		" -av -89.363953"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRingEffector_translateY_BakeResults" "inputB" 
-		" -av 81.786201"
+		" -av 146.96994"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRingEffector_translateZ_BakeResults" "inputB" 
-		" -av -169.212769"
+		" -av -1.097639"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRingEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 0.248187 -3.827041 102.477361"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRingEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRingEffector_rotate_BakeResults" "inputBY" 
@@ -9701,13 +9699,13 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightHandRingEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinkyEffector_translateX_BakeResults" "inputB" 
-		" -av 6.51031"
+		" -av -87.281586"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinkyEffector_translateY_BakeResults" "inputB" 
-		" -av 84.069183"
+		" -av 146.27684"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinkyEffector_translateZ_BakeResults" "inputB" 
-		" -av -170.698074"
+		" -av -2.722573"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinkyEffector_rotate_BakeResults" "inputB" 
-		" -type \"double3\" 0.248133 -3.827088 102.478162"
+		" -type \"double3\" 0 0 0"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinkyEffector_rotate_BakeResults" "inputBX" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinkyEffector_rotate_BakeResults" "inputBY" 
@@ -9715,12 +9713,12 @@ createNode reference -n "Kick_024_mtRN";
 		2 "Kick_024_mt:Kick_Ctrl_RightHandPinkyEffector_rotate_BakeResults" "inputBZ" 
 		" -av"
 		2 "Kick_024_mt:Kick_Ctrl_LeftWristEffector_translateX_AnimLayer1" "inputB" 
-		" -av 0"
+		" -av 24.322433"
 		2 "Kick_024_mt:Kick_Ctrl_LeftWristEffector_translateY_AnimLayer1" "inputB" 
-		" -av 0"
+		" -av 75.797394"
 		2 "Kick_024_mt:Kick_Ctrl_LeftWristEffector_translateZ_AnimLayer1" "inputB" 
-		" -av 0"
-		2 "Kick_024_mt:Kick_Ctrl_LeftWristEffector_rotate_AnimLayer1" "inputB" " -type \"double3\" 0 0 0"
+		" -av 641.65674"
+		2 "Kick_024_mt:Kick_Ctrl_LeftWristEffector_rotate_AnimLayer1" "inputB" " -type \"double3\" 0 0 -64.458117"
 		
 		2 "Kick_024_mt:Kick_Ctrl_LeftWristEffector_rotate_AnimLayer1" "inputBX" " -av"
 		
@@ -10092,8 +10090,7 @@ createNode reference -n "sharedReferenceNode";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sharedReferenceNode";
 select -ne :time1;
-	setAttr ".o" 720;
-	setAttr ".unw" 720;
+	setAttr ".o" 0;
 select -ne :renderPartition;
 	setAttr -s 34 ".st";
 select -ne :initialShadingGroup;
